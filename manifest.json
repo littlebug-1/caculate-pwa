@@ -1,6 +1,7 @@
 {
   "name": "PWA Calculator",
   "short_name": "Calculator",
+  "description": "A simple calculator application.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -16,5 +17,12 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "id": "com.yourname.calculator",
+  "launch_handler": {
+    "client_mode": "clear-site-data",
+    "default_url": "/"
+  },
+  "orientation": "any"
 }
+

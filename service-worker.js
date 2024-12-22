@@ -1,12 +1,13 @@
+// service-worker.js
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open('v1').then((cache) => {
+    caches.open('my-cache-v1').then((cache) => {
       return cache.addAll([
-        './index.html',
-        './style.css',
-        './script.js',
-        './icon-192x192.png',
-        './icon-512x512.png'
+        '/',
+        '/index.html',
+        '/style.css',
+        '/script.js',
+        // 添加其他资源...
       ]);
     })
   );
